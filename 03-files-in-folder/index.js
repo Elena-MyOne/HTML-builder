@@ -4,7 +4,7 @@ const path = require('path');
 const { readdir } = require('node:fs/promises');
 const { stat } = require('fs');
 
-const filesPath = path.join(__dirname, '\\secret-folder');
+const filesPath = path.join(__dirname, 'secret-folder');
 
 readdir(filesPath, { withFileTypes: true })
   .then((data) => {
